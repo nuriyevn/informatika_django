@@ -18,6 +18,6 @@ from django.conf.urls import url,include
 
 urlpatterns = [
     url('admin/', admin.site.urls),
-    url ('account/', include("account.urls"))
-
+    url ('account/', include("account.urls")),
+    url ('home/', include("home.urls")),
 ]

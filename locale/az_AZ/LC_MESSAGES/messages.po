@@ -1,0 +1,162 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Loco Demo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-21 21:47+0300\n"
+"PO-Revision-Date: 2018-10-22 18:22+0300\n"
+"Last-Translator: Nusrat Nusrat\n"
+"Language-Team: Azerbaijani\n"
+"Language: az-AZ\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz\n"
+"X-Loco-Source-Locale: en\n"
+"X-Loco-Project-Id: 56453\n"
+"X-Loco-Api-Version: 1.0.20 20180914-1"
+
+#. Example pluralized message
+#: loco:5bccc9a8a08ef16c13109862
+msgid "An example"
+msgid_plural "%s examples"
+msgstr[0] "Misal"
+msgstr[1] "%s misallar"
+
+#: loco:5bccca3fa08ef16b0f4ecbe2
+msgid "Registration"
+msgstr "Qeydiyyat"
+
+#: loco:5bcddfe97ec8ae052c126ed2
+msgid "Login"
+msgstr "Daxil olmaq"
+
+#: loco:5bcde02a7ec8ae05ae102912
+msgid "Contact Us"
+msgstr "Bizimlə əlaqə"
+
+#: loco:5bcde14b7ec8ae05b315f102
+msgid "Main Page"
+msgstr "Baş səhifə"
+
+#: loco:5bcde1837ec8ae060447f212
+msgid "Tasks"
+msgstr "Məsələlər"
+
+#: loco:5bcde1b77ec8ae060b4f97b2
+msgid "Statistics"
+msgstr "Statistika"
+
+#: loco:5bcde1f17ec8ae06076d8393
+msgid "Results"
+msgstr "Nəticələr"
+
+#: loco:5bcde2a97ec8ae06055e7644
+msgid "General list"
+msgstr "Ümumi siyahi"
+
+#: loco:5bcde2dd7ec8ae060614bcc6
+msgid "Accounts"
+msgstr "İstifadəçilər"
+
+#: loco:5bcde3267ec8ae06442963a2
+msgid "Rating"
+msgstr "Reytinq"
+
+#: loco:5bcde3727ec8ae065b32b853
+msgid "Contests"
+msgstr "Yarışlar"
+
+#: loco:5bcde39e7ec8ae0678453212
+msgid "Active"
+msgstr "Aktiv"
+
+#: loco:5bcde3d77ec8ae0678453214
+msgid "Future"
+msgstr "Gələcək"
+
+#: loco:5bcde42e7ec8ae0678453216
+msgid "History"
+msgstr "Tarixcə"
+
+#: loco:5bcde4837ec8ae065f1ec754
+msgid "About"
+msgstr "Ümumi"
+
+#: loco:5bcde4bf7ec8ae066e386bd5
+msgid "About project"
+msgstr "Layihə haqqında"
+
+#: loco:5bcde4ed7ec8ae06b0629023
+msgid "News"
+msgstr "Xəbərlər"
+
+#: loco:5bcde50a7ec8ae06a33470b3
+msgid "Articles"
+msgstr "Məqalələr"
+
+#: loco:5bcde52f7ec8ae06a80aa5d3Aşağıdakı formanı doldurub göndərdikdən sonra siz xidmətdən faydalana bilərsiniz
+msgid "Discussions"
+msgstr "Müzakirələr"
+
+#: loco:5bcde5537ec8ae06a7751de2
+msgid "Help"
+msgstr "Yardım"
+
+#: loco:5bcde5737ec8ae06b0629026
+msgid "Helpful links"
+msgstr "Faydalı"
+
+#: loco:5bcde5fb7ec8ae06a80aa5d5
+msgid "Social Networks"
+msgstr "Sosial şəbəkərdə"
+
+#: loco:5bcde6557ec8ae070314a033
+msgid "copyleft"
+msgstr "Internet-portal entuziastlar ilə tərtib olunub, “Bakı” nəşriyyatı dəstəyi "
+"ilə distans proqramlaşdırma olimpiadalarının metodik təşkili üçün "
+"hazırlanmışdır."
+
+msgid "Signup"
+msgstr "Qeydiyyat"
+
+msgid "LostPassword"
+msgstr "Parolu yeniləmək"
+
+
+msgid "LostPasswordHint"
+msgstr "Şifrə itirildikdə"
+
+msgid "LoginHint"
+msgstr "Avtorizə ol"
+
+msgid "RegisterHint"
+msgstr "Başlamaq üçün 'saynap' ol"
+
+msgid "RegistrationFormTitle"
+msgstr "Aşağıdakı formanı doldurub göndərdikdən sonra siz xidmətdən faydalana bilərsiniz"
+
+msgid "NameSurname"
+msgstr "Ad və Soyad"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Username"
+msgstr "İstifadəçi adı"
+
+msgid "Password"
+msgstr "Şifrə"
+
+msgid "PasswordRepeat"
+msgstr "Şifrə (təkrar)"
+
+msgid "Register"
+msgstr "Qeyd Ol"
+
+
+msgid "RegistrationWelcomeTitle"
+msgstr "Hörmətli şagirdlər, tələbələr, müəllimlər! Əziz proqramçılar!"
+
+msgid "RegistrationWelcomeDescription"
+msgstr "Xahiş edirik qeydiyyat formasında göstərilən bütün sahələri doldurasınız. Zəruri statistikanın aparılması, layihə çərçivəsində planlaşdırılan tədbirlərin düzgün təşkili, ümidverici şagird və tələbələrin beynəlxalq yarışlara hazırlıq üçün seçilməsi, informatika müəllimləri üçün proqramlaşdırma üzrə nəzərdə tutulan təlimlər üçün təlimçilərin seçilməsində bu məlumatlardan istifadə olunacaq. informatika.edu.az saytına xoş gəlmisiniz!"

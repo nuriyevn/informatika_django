@@ -1,0 +1,162 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Loco Demo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-21 21:47+0300\n"
+"PO-Revision-Date: 2018-10-22 18:22+0300\n"
+"Last-Translator: Nusrat Nusrat\n"
+"Language-Team: English\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz\n"
+"X-Loco-Source-Locale: en\n"
+"X-Loco-Project-Id: 56453\n"
+"X-Loco-Api-Version: 1.0.20 20180914-1"
+
+#. Example pluralized message
+#: loco:5bccc9a8a08ef16c13109862
+msgid "An example"
+msgid_plural "%s examples"
+msgstr[0] "An example"
+msgstr[1] "%s examples"
+
+#: loco:5bccca3fa08ef16b0f4ecbe2
+msgid "Registration"
+msgstr "Registration"
+
+#: loco:5bcddfe97ec8ae052c126ed2
+msgid "Login"
+msgstr "Login"
+
+#: loco:5bcde02a7ec8ae05ae102912
+msgid "Contact Us"
+msgstr "Contact Us"
+
+#: loco:5bcde14b7ec8ae05b315f102
+msgid "Main Page"
+msgstr "Main Page"
+
+#: loco:5bcde1837ec8ae060447f212
+msgid "Tasks"
+msgstr "Tasks"
+
+#: loco:5bcde1b77ec8ae060b4f97b2
+msgid "Statistics"
+msgstr "Statistics"
+
+#: loco:5bcde1f17ec8ae06076d8393
+msgid "Results"
+msgstr "Results"
+
+#: loco:5bcde2a97ec8ae06055e7644
+msgid "General list"
+msgstr "General list"
+
+#: loco:5bcde2dd7ec8ae060614bcc6
+msgid "Accounts"
+msgstr "Accounts"
+
+#: loco:5bcde3267ec8ae06442963a2
+msgid "Rating"
+msgstr "Rating"
+
+#: loco:5bcde3727ec8ae065b32b853
+msgid "Contests"
+msgstr "Contests"
+
+#: loco:5bcde39e7ec8ae0678453212
+msgid "Active"
+msgstr "Active"
+
+#: loco:5bcde3d77ec8ae0678453214
+msgid "Future"
+msgstr "Future"
+
+#: loco:5bcde42e7ec8ae0678453216
+msgid "History"
+msgstr "History"
+
+#: loco:5bcde4837ec8ae065f1ec754
+msgid "About"
+msgstr "About"
+
+#: loco:5bcde4bf7ec8ae066e386bd5
+msgid "About project"
+msgstr "About project"
+
+#: loco:5bcde4ed7ec8ae06b0629023
+msgid "News"
+msgstr "News"
+
+#: loco:5bcde50a7ec8ae06a33470b3
+msgid "Articles"
+msgstr "Articles"
+
+#: loco:5bcde52f7ec8ae06a80aa5d3
+msgid "Discussions"
+msgstr "Discussions"
+
+#: loco:5bcde5537ec8ae06a7751de2
+msgid "Help"
+msgstr "Help"
+
+#: loco:5bcde5737ec8ae06b0629026
+msgid "Helpful links"
+msgstr "Helpful links"
+
+#: loco:5bcde5fb7ec8ae06a80aa5d5
+msgid "Social Networks"
+msgstr "Social Networks"
+
+#: loco:5bcde6557ec8ae070314a033
+msgid "copyleft"
+msgstr "This web-portal is developed by enthusiasts and supported by publishing "
+"house \"Baku\" and  provides online judge facilities to submit solutions for "
+"programming tasks."
+
+msgid "Signup"
+msgstr "Sign Up"
+
+msgid "LostPassword"
+msgstr "Recover password"
+
+msgid "LostPasswordHint"
+msgstr "Restore access"
+
+msgid "LoginHint"
+msgstr "Authorize"
+
+msgid "RegisterHint"
+msgstr "Register to start"
+
+msgid "RegistrationFormTitle"
+msgstr "Input following fields to sign up and use the system"
+
+msgid "NameSurname"
+msgstr "Name and Surname"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Username"
+msgstr "Username"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "PasswordRepeat"
+msgstr "Password Repeat"
+
+msgid "Register"
+msgstr "Register"
+
+
+msgid "RegistrationWelcomeTitle"
+msgstr ""
+
+msgid "RegistrationWelcomeDescription"
+msgstr ""
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load i18n %}
+
+    <!-- Basic Page Needs -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>%%Page.WindowTitle%%</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=%%Config.Charset%%">
+    <meta name="description" content="%%Config.WebSiteDescription%%">
+    <meta name="keywords" content="%%Config.WebSiteKeywords%%">
+    <meta name="author" content="informatika.edu.az">
+
+
+    <!-- Mobile Specific Metas-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+
+    <!-- Fonts -->
+    <!--
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,600,700italic,400,700,800italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    -->
+    <!-- Icon Font - Font Awesome -->
+    <link href="%%Config.CurrentTemplatePath%%/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <!-- External -->
+    <!-- Mobile menu -->
+    <link href="%%Config.CurrentTemplatePath%%/external/z-nav/z-nav.css" rel="stylesheet">
+
+    <!-- Touch slider - Swiper -->
+    <link href="%%Config.CurrentTemplatePath%%/external/swiper/idangerous.swiper.css" rel="stylesheet"/>
+
+    <!-- Custom -->
+    <link href="%%Config.CurrentTemplatePath%%/css/style3860.css?v=1" rel="stylesheet"/>
+    <link href="%%Config.CurrentTemplatePath%%/css/custom-style.css" rel="stylesheet"/>
+    <!-- @LINEBREAK -- <!-- Plugin: flag icons - http://lipis.github.io/flag-icon-css/ -->
+    <link href="%%Config.CurrentTemplatePath%%/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+
+
+    <!-- Basic JavaScript-->
+    <!-- Modernizr -->
+    <script src="%%Config.CurrentTemplatePath%%/external/modernizr/modernizr.custom.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
+    <![endif]-->
+
+    <!--[if lte IE 9]>
+    <link href="%%Config.CurrentTemplatePath%%/css/ie9.css?v=1" rel="stylesheet"/>
+    <![endif]-->
+
+
+    <!-- jQuery 1.10.1-->
+    <script src="%%Config.CurrentTemplatePath%%/js/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="%%Config.CurrentTemplatePath%%/external/jquery/jquery-1.10.1.min.js"><\/script>')
+    </script>
+    <!-- Bootstrap 3-->
+    <script src="%%Config.CurrentTemplatePath%%/js/bootstrap.min.js"></script>
+    <!-- Mobile menu -->
+    <script src="%%Config.CurrentTemplatePath%%/external/z-nav/jquery.mobile.menu.js"></script>
+    <!-- Touch slider - Swiper -->
+    <script src="%%Config.CurrentTemplatePath%%/external/swiper/idangerous.swiper.js"></script>
+    <!-- Scroll to piugin -->
+    <script src="%%Config.CurrentTemplatePath%%/external/scrollto/jquery.scrollTo.min.js"></script>
+    <!-- Custom
+    <script src="%%Config.CurrentTemplatePath%%/js/dt.js"></script>
+    -->
+
+</head>
+
+<body>
+
+<div class="wrapper" id="top">
+
+    {% include 'home/header.html' %}
+
+    <!-- ======== @Region: #content ======== -->
+    <div id="content">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-9 blog-roll blog-list">
+                    <h4 class="title-divider">
+                        <span>%%LNG_DefaultLatestNews1%%</span>
+                        <small></small>
+                    </h4>
+                    <div class="row list-unstyled">
+                        %%Panel.FeaturedNews%%
+                    </div>
+                </div>
+                <!--Sidebar-->
+                <div class="col-md-3 sidebar sidebar-right">
+                    <!-- <h2 class="heading heading--section heading--first">%%LNG_Categories%%</h2>
+                    <ul class="list list--marker">
+                        <li class="list__item"><a class="list__link" href="%%Config.HomePath%%/tasks.php?action=all">%%LNG_HeaderMenuTasks%% (%%GLOBAL_TaskCount%%)</a></li>
+                        <li class="list__item"><a class="list__link" href="%%Config.HomePath%%/tasks.php?action=result">%%LNG_HeaderMenuTasksResult%% (%%GLOBAL_ResultCount%%)</a></li>
+                        <li class="list__item"><a class="list__link" href="%%Config.HomePath%%/users.php?action=all">%%LNG_HeaderMenuUsers%% (%%GLOBAL_UserCount%%)</a></li>
+                        <li class="list__item"><a class="list__link" href="%%Config.HomePath%%/comp.php?action=active">%%LNG_HeaderMenuComp%% (%%GLOBAL_CompCount%%)</a></li>
+                    </ul> -->
+                    %%Panel.RightColumn%%
+                    %%Panel.FeaturedUserRating%%
+                </div>
+            </div>
+
+            <div class="block features">
+
+                <!-- Counters -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="title-divider">
+                            <span></span>
+                        </h3>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    {% include 'home/footer.html' %}
+
+
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70143033-1', 'auto');
+  ga('send', 'pageview');
+
+
+</script>
+
+</body>
+
+</html>

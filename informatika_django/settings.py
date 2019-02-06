@@ -11,7 +11,8 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-
+from django.conf import settings
+from django.utils.translation import ugettext_lazy as _
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -28,6 +29,33 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+cookiePrefix = ""
+imagePath = ""
+siteName = "informatika.edu.az"
+siteURL = "http://informatika.edu.az"
+sitePath = ""
+sitePathWin = ""
+siteEmail = ""
+siteSMTP = ""
+siteSMTPPass = ""
+appPath = "/"
+dbUser = ""
+dbPass = ""
+dbDatabase = ""
+dbServer = "localhost"
+tablePrefix = ""
+charset = "utf-8"
+ItemsPerPage = 25
+template = "main"
+SiteColor = "main"
+siteDesc = ""
+siteKeywords = ""
+ServerTimezone = 4
+RemoteServer = ""
+RemoteServerUser = ""
+RemoteServerPass = ""
+#downForMaintenance = 0
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -38,6 +66,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'home.apps.HomeConfig',
+    'translations',
 
 ]
 
@@ -49,7 +79,26 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 ]
+
+# Provide a lists of languages which your site supports.
+LANGUAGES = (
+    ('en', _('English')),
+    ('fr', _('French')),
+    ('de', _('German')),
+    ('uk_UA', _('Ukrainian')),
+)
+
+USE_L10N = True
+USE_I18N = True
+# Set the default language for your site.
+
+
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'locale'),
+]
+
 
 ROOT_URLCONF = 'informatika_django.urls'
 
@@ -105,7 +154,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'UTC'
 

@@ -1,0 +1,209 @@
+
+{% load i18n %}
+		<!-- Header section -->
+        <header class="header header--complex">
+            <div class="header-fixed">
+            <div class="header-line waypoint" data-animate-down="header-up" data-animate-up="header-down">
+                <div class="container">
+                    <!--  Logo  -->
+                    <a class="logo logo-sm" href="%%Config.HomePath%%">
+                        <!-- Remove comments to choose image and add comment to h1 -->
+                        <!-- <img src="images/logo-full-sm.png" alt="">   -->
+                        <h1 class="logo__text">{% trans 'Login' %} <br></h1>
+                    </a>
+                    <!-- End Logo -->
+
+
+                    <div class="pull-right hidden-xs">
+                    <!-- Contact information about company -->
+                    <address class="contact-info pull-left hidden-lower">
+                        <!--user menu-->
+						<a href="%%Config.HomePath%%/register.php" class="contact-info__item">
+							<i class="fa fa-user" style="padding-right:5px; font-size:24px"></i>
+								%%LNG_HeaderRegister%%
+						</a>
+						<a href="%%Config.HomePath%%/user/index.php" class="contact-info__item">
+							<i class="fa fa-sign-in" style="padding-right:5px; font-size:24px"></i>
+								%%LNG_HeaderLogin%%
+						</a>
+						<!--user menu end-->
+
+						<!--user menu logged-->
+						<a href="%%Config.HomePath%%/%%GLOBAL_CParea%%/index.php?action=manageTasks&start=1" class="contact-info__item">
+							<i class="fa fa-desktop" style="padding-right:5px; font-size:24px"></i>%%LNG_HeaderAccount%% (%%GLOBAL_LoggedUsername%%)
+						</a>
+						<!--user menu logged end-->
+
+						<a class="contact-info__item" href="%%Config.HomePath%%/page.php?p=contact">
+							<i class="fa fa-envelope" style="padding-right:5px; font-size:24px"></i>
+							%%LNG_HeaderMenuPageContact%%
+						</a>
+
+						<div style="display: inline-block;padding-left:15px">
+							  <!--language menu-->
+							<a href="%%GLOBAL_CurrentUrl%%lang=az"><span class="flag-icon flag-icon-az"></span></a>
+							<a href="%%GLOBAL_CurrentUrl%%lang=az"><span class="flag-icon flag-icon-gb"></span></a>
+							<a href="%%GLOBAL_CurrentUrl%%lang=ru"><span class="flag-icon flag-icon-ru"></span></a>
+						</div>
+                    </address>
+                    <!-- end contact information -->
+
+                    <div class="social social--default social--small">
+                        <!-- List with social icons -->
+                        <ul>
+                            <li class="social__item"><a class="social__link" href="https://www.facebook.com/" target="_blank"><i class="social__icon fa fa-facebook"></i></a></li>
+                            <li class="social__item"><a class="social__link" href="https://plus.google.com/" target="_blank"><i class="social__icon fa fa-google-plus"></i></a></li>
+                            <li class="social__item"><a class="social__link" href="http://www.linkedin.com/" target="_blank"><i class="social__icon fa fa-linkedin"></i></a></li>
+                            <li class="social__item"><a class="social__link" href="#" target="_blank"><i class="social__icon fa fa-youtube-play"></i></a></li>
+                        </ul>
+                    </div>
+
+                    </div>
+
+                </div>  <!-- end container -->
+            </div>
+
+            <div class="fixed-top header-down">
+            <div class="container">
+
+
+                <!-- Navigation section -->
+                <nav class="z-nav">
+                    <!-- Toggle for menu mobile view -->
+                    <a href="#" class="z-nav__toggle">
+                        <span class="menu-icon"></span>
+                        <span class="menu-text">%%LNG_HeaderShowContent%%</span>
+                        <div class="menu-head"></div>
+                    </a>
+
+                    <ul class="z-nav__list">
+                        <li class="z-nav__item">
+			        		<!-- Subsidiary menu toogle button -->
+			            	<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+			        		<a class="z-nav__link" href="%%Config.HomePath%%/index.php">%%LNG_HeaderPageHome%%</a>
+			        	</li>
+
+			        	<li class="z-nav__item">
+			        		<!-- Subsidiary menu toogle button -->
+			            	<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+			        		<a class="z-nav__link" href="#">%%LNG_HeaderMenuTasks%%</a>
+			        		<!-- Subsidiary menu list-->
+			                <ul class="z-nav__list-secondary">
+			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/tasks.php?action=all">%%LNG_HeaderMenuTasksAll%%</a></li>
+			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/tasks.php?action=stat">%%LNG_HeaderMenuTasksStat%%</a></li>
+			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/tasks.php?action=result">%%LNG_HeaderMenuTasksResult%%</a></li>
+			                </ul>
+			                <!-- end subsidiary menu list-->
+			        	</li>
+
+			            <li class="z-nav__item">
+			                <!-- Subsidiary menu toogle button -->
+			            	<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+			            	<a class="z-nav__link" href="#">%%LNG_HeaderMenuUsers%%</a>
+			                <!-- Subsidiary menu list-->
+			                <ul class="z-nav__list-secondary">
+			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/users.php?action=all">%%LNG_HeaderMenuUsersAll%%</a></li>
+			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/users.php?action=rating">%%LNG_HeaderMenuUsersRating%%</a></li>
+			                </ul>
+			                <!-- end subsidiary menu list-->
+			            </li>
+
+
+			            <li class="z-nav__item">
+			                <!-- Subsidiary menu toogle button -->
+			            	<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+			            	<a class="z-nav__link" href="#">%%LNG_HeaderMenuComp%%</a>
+			                <!-- Subsidiary menu list-->
+			                <ul class="z-nav__list-secondary">
+			                   	<li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/comp.php?action=active">%%LNG_HeaderMenuCompActive%%</a></li>
+			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/comp.php?action=planned">%%LNG_HeaderMenuCompPending%%</a></li>
+			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/comp.php?action=history">%%LNG_HeaderMenuCompHistory%%</a></li>
+			                </ul>
+			                <!-- end subsidiary menu list-->
+			            </li>
+
+			            <li class="z-nav__item">
+			                <!-- Subsidiary menu toogle button -->
+			            	<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+			            	<a class="z-nav__link" href="#">%%LNG_HeaderMenuPageMain%%</a>
+			                <!-- Subsidiary menu list-->
+			                <ul class="z-nav__list-secondary">
+					        	<li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/page.php?p=about">%%LNG_HeaderMenuPageAbout%%</a></li>
+			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/page.php?p=news">%%LNG_HeaderMenuPageNews%%</a></li>
+						<li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/page.php?p=blogs">%%LNG_HeaderMenuPageBlogs%%</a></li>
+						<li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/page.php?p=discussions">%%LNG_HeaderMenuPageDiscussions%%</a></li>
+			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/page.php?p=help">%%LNG_HeaderMenuPageHelp%%</a></li>
+			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/page.php?p=resource">%%LNG_HeaderMenuPageUseful%%</a></li>
+			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/page.php?p=contact">%%LNG_HeaderMenuPageContact%%</a></li>
+			                </ul>
+			                <!-- end subsidiary menu list-->
+			            </li>
+
+                    </ul>
+                    <!-- end list menu item -->
+					<script>
+
+					$(document).ready(function() {
+						var interval = setInterval(function() {
+							function pad(n) {
+								return (n < 10) ? '0' + n : n;
+							}
+							var dt = new Date();
+							var utc = dt.getTime();/* + (dt.getTimezoneOffset() * 60000);*/
+							var now = new Date(utc/* + (3600000*5)*/);
+
+							var s = pad(now.getDate()) + '.' +pad(now.getMonth()+1)+'.' +now.getFullYear()+' &nbsp; ' +pad(now.getHours()) + ':' +
+									pad(now.getMinutes()) + ':' + pad(now.getSeconds());
+
+							$('#date_time').html(s);
+						}, 100);
+						var interval2 = setInterval(function() {
+							$.ajax({
+							  url: "%%Config.HomePath%%/online.php",
+							  type:"post",
+							  data: {check: 1},
+							  success: function(data){  }
+							});
+						}, 5000);
+					});
+					</script>
+					<div style="float: right;font-family: Tahoma; font-size:16px; color: #fff;	padding-right: 40px;padding-top:3px" id="date_time"></div>
+                </nav>
+                <!-- end navigation section -->
+
+                <!-- Search field --
+                    <form class="search pull-right hidden-xs" id="search-form" name="search-form" method="get" action="#">
+                        <input class="search__field" name="search-request" type="search" placeholder="search" value="">
+                        <button class="search__btn" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                !-- end search field -->
+            </div> <!-- end container -->
+
+            <!-- Colored divider -->
+            <div class="divider-color"></div>
+            </div> <!-- end fixed top block -->
+            </div>
+        </header>
+		<!-- end header section -->
+
+		<section class="page-indecator" style="padding-top:30px">
+			<div class="container">
+			</div>
+		</section>
+		<!-- Section show current page and breadcrumb --
+		<section class="page-indecator">
+			<div class="container">
+				<h2 class="heading">Headers</h2>
+
+
+				<ol class="breadcrumb">
+				  <li><a href="index-2.html">Home</a></li>
+				  <li class="active">Headers</li>
+				</ol>
+
+				<div class="divider divider--bottom-sm"></div>
+			</div>
+		</section>
+		!-- end section show current page and breadcrumb -->
