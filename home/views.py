@@ -17,11 +17,12 @@ def index3(request):
     context = {
         'site_title': 'sdf'
     }
-
-    locale.setlocale(locale.LC_ALL, ('uk_UA'))
+    # import locale
+    # import gettext
+    locale.setlocale(locale.LC_ALL, ('en_US', 'cp1252'))
     gettext.bindtextdomain('django', './locale')
     gettext.textdomain('django')
-    #lang1 = gettext.translation('django', languages=['en'])
+    gettext.gettext('Login')
 
     #lang1.install()
 

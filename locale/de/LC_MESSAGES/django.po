@@ -21,3 +21,7 @@ msgstr ""
 #: .\home\views.py:6
 msgid "Login"
 msgstr "Anmeldung"
+
+
+msgid "Register"
+msgstr "Registriren"

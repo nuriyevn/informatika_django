@@ -20,4 +20,7 @@ msgstr ""
 
 #: .\home\views.py:15 .\home\views.py:16
 msgid "Login"
-msgstr ""
+msgstr "This is login"
+
+msgid "Register"
+msgstr "This is register"

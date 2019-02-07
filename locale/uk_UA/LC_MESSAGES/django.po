@@ -20,3 +20,6 @@ msgstr ""
 #: .\home\views.py:14 .\home\views.py:15
 msgid "Login"
 msgstr "Увійти"
+
+msgid "Register"
+msgstr "Реєстрація"
