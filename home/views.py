@@ -19,15 +19,11 @@ def index3(request):
     }
     # import locale
     # import gettext
-    locale.setlocale(locale.LC_ALL, ('en_US', 'cp1252'))
-    gettext.bindtextdomain('django', './locale')
+    os.environ['LANGUAGE'] = 'uk_UA'
+    gettext.bindtextdomain('django', settings.LOCALE_PATHS[0])
     gettext.textdomain('django')
-    gettext.gettext('Login')
-
-    #lang1.install()
-
+    print(gettext.gettext('Login'))
     return HttpResponse( gettext.gettext('Login'))
-    #return render(request, 'home/home.html', context)
 
 def index(request):
     dir_path = os.path.dirname(os.path.realpath(__file__))
