@@ -80,7 +80,10 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.locale.LocaleMiddleware',
+    'home.apps.LocaleMiddleware',
 ]
+
+
 
 # Provide a lists of languages which your site supports.
 LANGUAGES = (
