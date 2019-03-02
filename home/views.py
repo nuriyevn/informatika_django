@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-
+from account.models import Account
 
 from urllib import  parse
 
@@ -13,8 +13,11 @@ def lang(request):
 
 # Create your views here.
 def index3(request):
-
-    return render(request, 'home/home.html')
+    user = 'Kind_of_authorized_account'
+    context = {
+        'user' : user,
+    }
+    return render(request, 'home/home.html', context)
 
 def index(request):
     dir_path = os.path.dirname(os.path.realpath(__file__))

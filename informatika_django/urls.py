@@ -17,7 +17,11 @@ from django.contrib import admin
 from django.conf.urls import url,include
 
 urlpatterns = [
-    url('admin/', admin.site.urls),
-    url ('account/', include("account.urls")),
-    url ('home/', include("home.urls")),
+    url('^admin/', admin.site.urls),
+    url ('^account/', include("account.urls")),
+    url ('^home/', include("home.urls")),
+    url ('^user/', include("user.urls")),
+    url('^task/', include("task.urls")),
+    url('^competition/', include("competition.urls")),
+    url('^page/', include("page.urls"))
 ]

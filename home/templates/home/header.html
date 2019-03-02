@@ -9,7 +9,7 @@
                     <a class="logo logo-sm" href="%%Config.HomePath%%">
                         <!-- Remove comments to choose image and add comment to h1 -->
                         <!-- <img src="images/logo-full-sm.png" alt="">   -->
-                        <h1 class="logo__text">{% trans 'Login' %} <br></h1>
+                        <h1 class="logo__text">{% trans 'informatika.edu.az' %} <br></h1>
                         <a href="/home/change_locale/lang=az_AZ">AZ</a>
                         <a href="/home/change_locale/lang=uk_UA">UK</a>
                         <a href="/home/change_locale/lang=en_US">EN</a>
@@ -21,25 +21,25 @@
                     <!-- Contact information about company -->
                     <address class="contact-info pull-left hidden-lower">
                         <!--user menu-->
-						<a href="%%Config.HomePath%%/register.php" class="contact-info__item">
+						<a href="{% url  'account:register' %}" class="contact-info__item">
 							<i class="fa fa-user" style="padding-right:5px; font-size:24px"></i>
-								%%LNG_HeaderRegister%%
+								{% trans Register %}
 						</a>
-						<a href="%%Config.HomePath%%/user/index.php" class="contact-info__item">
+						<a href="{%  url 'account:login' %}" class="contact-info__item">
 							<i class="fa fa-sign-in" style="padding-right:5px; font-size:24px"></i>
-								%%LNG_HeaderLogin%%
+                                {% trans Login %}
 						</a>
 						<!--user menu end-->
 
 						<!--user menu logged-->
-						<a href="%%Config.HomePath%%/%%GLOBAL_CParea%%/index.php?action=manageTasks&start=1" class="contact-info__item">
-							<i class="fa fa-desktop" style="padding-right:5px; font-size:24px"></i>%%LNG_HeaderAccount%% (%%GLOBAL_LoggedUsername%%)
+						<a href="{% url 'account:dashboard' %}" class="contact-info__item">
+							<i class="fa fa-desktop" style="padding-right:5px; font-size:24px"></i> {% trans Dashboard %} ({% user.email %})
 						</a>
 						<!--user menu logged end-->
 
-						<a class="contact-info__item" href="%%Config.HomePath%%/page.php?p=contact">
+						<a class="contact-info__item" href="{% url 'page:contact '%}">
 							<i class="fa fa-envelope" style="padding-right:5px; font-size:24px"></i>
-							%%LNG_HeaderMenuPageContact%%
+							{% trans Contact %}
 						</a>
 
 						<div style="display: inline-block;padding-left:15px">
@@ -75,7 +75,7 @@
                     <!-- Toggle for menu mobile view -->
                     <a href="#" class="z-nav__toggle">
                         <span class="menu-icon"></span>
-                        <span class="menu-text">%%LNG_HeaderShowContent%%</span>
+                        <span class="menu-text">{% trans Show Content %}</span>
                         <div class="menu-head"></div>
                     </a>
 
@@ -83,18 +83,18 @@
                         <li class="z-nav__item">
 			        		<!-- Subsidiary menu toogle button -->
 			            	<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
-			        		<a class="z-nav__link" href="%%Config.HomePath%%/index.php">%%LNG_HeaderPageHome%%</a>
+			        		<a class="z-nav__link" href="{% url 'home:index '%}">{% trans Main Page %}/a>
 			        	</li>
 
 			        	<li class="z-nav__item">
 			        		<!-- Subsidiary menu toogle button -->
 			            	<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
-			        		<a class="z-nav__link" href="#">%%LNG_HeaderMenuTasks%%</a>
+			        		<a class="z-nav__link" href="#"> {% trans Tasks %} </a>
 			        		<!-- Subsidiary menu list-->
 			                <ul class="z-nav__list-secondary">
-			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/tasks.php?action=all">%%LNG_HeaderMenuTasksAll%%</a></li>
-			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/tasks.php?action=stat">%%LNG_HeaderMenuTasksStat%%</a></li>
-			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/tasks.php?action=result">%%LNG_HeaderMenuTasksResult%%</a></li>
+			                    <li class="z-nav__item"><a class="z-nav__link" href="{% url 'taks:all' %}">{% trans All tasks %}</a></li>
+			                    <li class="z-nav__item"><a class="z-nav__link" href="{% url 'task:statistics' %}">{% trans Statistics %}</a></li>
+			                    <li class="z-nav__item"><a class="z-nav__link" href="{% url 'taks:result' %}">{% trans Results %}</a></li>
 			                </ul>
 			                <!-- end subsidiary menu list-->
 			        	</li>
@@ -102,11 +102,11 @@
 			            <li class="z-nav__item">
 			                <!-- Subsidiary menu toogle button -->
 			            	<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
-			            	<a class="z-nav__link" href="#">%%LNG_HeaderMenuUsers%%</a>
+			            	<a class="z-nav__link" href="#">{% trans Users %}</a>
 			                <!-- Subsidiary menu list-->
 			                <ul class="z-nav__list-secondary">
-			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/users.php?action=all">%%LNG_HeaderMenuUsersAll%%</a></li>
-			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/users.php?action=rating">%%LNG_HeaderMenuUsersRating%%</a></li>
+			                    <li class="z-nav__item"><a class="z-nav__link" href="{% url 'user:all' %}">{% trans All Users %}</a></li>
+			                    <li class="z-nav__item"><a class="z-nav__link" href="{% url 'user:rating' %}">{% trans Rating %}</a></li>
 			                </ul>
 			                <!-- end subsidiary menu list-->
 			            </li>
@@ -115,12 +115,12 @@
 			            <li class="z-nav__item">
 			                <!-- Subsidiary menu toogle button -->
 			            	<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
-			            	<a class="z-nav__link" href="#">%%LNG_HeaderMenuComp%%</a>
+			            	<a class="z-nav__link" href="#">{% trans Competitions %}</a>
 			                <!-- Subsidiary menu list-->
 			                <ul class="z-nav__list-secondary">
-			                   	<li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/comp.php?action=active">%%LNG_HeaderMenuCompActive%%</a></li>
-			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/comp.php?action=planned">%%LNG_HeaderMenuCompPending%%</a></li>
-			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/comp.php?action=history">%%LNG_HeaderMenuCompHistory%%</a></li>
+			                   	<li class="z-nav__item"><a class="z-nav__link" href="{% url 'competition:active '%}">{% trans Active %}</a></li>
+			                    <li class="z-nav__item"><a class="z-nav__link" href="{% url 'competition:planned '%}">{% trans Planned %}</a></li>
+			                    <li class="z-nav__item"><a class="z-nav__link" href="{% url 'competition:history '%}">{% trans History %}</a></li>
 			                </ul>
 			                <!-- end subsidiary menu list-->
 			            </li>
@@ -128,16 +128,16 @@
 			            <li class="z-nav__item">
 			                <!-- Subsidiary menu toogle button -->
 			            	<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
-			            	<a class="z-nav__link" href="#">%%LNG_HeaderMenuPageMain%%</a>
+			            	<a class="z-nav__link" href="#">{% trans Overall %}</a>
 			                <!-- Subsidiary menu list-->
 			                <ul class="z-nav__list-secondary">
-					        	<li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/page.php?p=about">%%LNG_HeaderMenuPageAbout%%</a></li>
-			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/page.php?p=news">%%LNG_HeaderMenuPageNews%%</a></li>
-						<li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/page.php?p=blogs">%%LNG_HeaderMenuPageBlogs%%</a></li>
-						<li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/page.php?p=discussions">%%LNG_HeaderMenuPageDiscussions%%</a></li>
-			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/page.php?p=help">%%LNG_HeaderMenuPageHelp%%</a></li>
-			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/page.php?p=resource">%%LNG_HeaderMenuPageUseful%%</a></li>
-			                    <li class="z-nav__item"><a class="z-nav__link" href="%%Config.HomePath%%/page.php?p=contact">%%LNG_HeaderMenuPageContact%%</a></li>
+					        	<li class="z-nav__item"><a class="z-nav__link" href={% url 'page:about' %}">{% trans About %}</a></li>
+			                    <li class="z-nav__item"><a class="z-nav__link" href="{% url 'page:news' %}">{% trans News %}</a></li>
+						<li class="z-nav__item"><a class="z-nav__link" href="{% url 'page:blogs' %}">{% trans Blogs %}</a></li>
+						<li class="z-nav__item"><a class="z-nav__link" href="{% url 'page:discussions' %}">{% trans Discussionns %}</a></li>
+			                    <li class="z-nav__item"><a class="z-nav__link" href="{% url 'page:help '%}">{% trans Help %}</a></li>
+			                    <li class="z-nav__item"><a class="z-nav__link" href="{% url 'page:resource' %}">{% trans Resource %}</a></li>
+			                    <li class="z-nav__item"><a class="z-nav__link" href="{% url 'page:contact' %}">{% trans Contact %}</a></li>
 			                </ul>
 			                <!-- end subsidiary menu list-->
 			            </li>

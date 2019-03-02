@@ -8,25 +8,25 @@
 
 				<!-- Contact info about company -->
 				<div class="col-sm-8">
-					<h3 class="heading-info heading-info--mobile">%%LNG_FooterContactUs%%:</h3>
+					<h3 class="heading-info heading-info--mobile">{% trans Contact us %}:</h3>
 					<!-- Contact information about company -->
 						<address class="contact-info contact-info--list">
 							<div class="row">
 								<div class="col-xs-6 col-sm-12 one-column">
 									<a href="#" class="contact-info__item" target="_blank">
 										<i class="fa fa-location-arrow"></i>
-										%%LNG_FooterAddress%%
+										{% trans Azerbaijan, Baku %}
 									</a>
 									<a class="contact-info__item" href="#">
 										<i class="fa fa-mobile"></i>
-										%%LNG_FooterPhone%%
+										{% trans '+994 12 000 00 00' %}
 									</a>
 								</div>
 
 								<div class="col-xs-6 col-sm-12 one-column">
 									<a class="contact-info__item" href="%%Config.HomePath%%/page.php?p=contact">
 										<i class="fa fa-envelope"></i>
-										%%GLOBAL_SiteEmail%%
+										{% trans info[at]informatika.edu.az %}
 									</a>
 								</div>
 							</div>
@@ -37,7 +37,7 @@
 
 				<!-- Social links -->
 				<div class="col-sm-4">
-				<h3 class="heading-info heading-info--mobile">%%LNG_FooterSocialLinks%%:</h3>
+				<h3 class="heading-info heading-info--mobile">{% trans Social links %}:</h3>
 					<div class="social social--default">
 						<!-- List with social icons -->
 						<ul>
@@ -51,10 +51,10 @@
 				<!-- end social links -->
 				</div><!-- end row -->
 
-				<div class="copy">
-					%%LNG_FooterRules%%
+				<div class="copy"> 
+				    {% trans Rules %}
 					<br/>
-					%%LNG_FooterPoweredBy%%
+					{% trans Ministry of Education of Azerbaijan Republic, 2015 %}
 				</div>
 
 			</div><!-- end container -->

@@ -18,9 +18,97 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: .\home\views.py:15 .\home\views.py:16
-msgid "Login"
-msgstr "Girish"
 
+
+msgid "Login"
+msgstr "Giriş"
+
+msgid "informatika.edu.az"
+msgstr "informatika.edu.az"
 
 msgid "Register"
 msgstr "Qeyd"
+
+msgid "Main Page"
+msgstr "Baş Səhifə"
+
+msgid "Show Content"
+msgstr "Mətni göstər"
+
+msgid "Tasks"
+msgstr "Məsələlər"
+
+msgid "All tasks"
+msgstr "Ümumi siyahı"
+
+msgid "Statistics"
+msgstr "Statistika"
+
+msgid "Results"
+msgstr "Nəticələr"
+
+msgid "Users"
+msgstr "İstifadəçilər"
+
+msgid "All Users"
+msgstr "Ümumi siyahı"
+
+msgid "Rating"
+msgstr "Reytinq"
+
+msgid "Competitions"
+msgstr "Yarışlar"
+
+msgid "Active"
+msgstr "Aktiv"
+
+msgid "Planned"
+msgstr "Növbəti"
+
+msgid "History"
+msgstr "Tarixçə"
+
+msgid "About"
+msgstr "Layihə haqqında"
+
+msgid "News"
+msgstr "Xəbərlər"
+
+msgid "Blogs"
+msgstr "Məqalələr"
+
+msgid "Discussions"
+msgstr "Müzakirələr"
+
+msgid "Help"
+msgstr "Yardım"
+
+msgid "Resource"
+msgstr "Faydalı"
+
+msgid "Contact us"
+msgstr "Bizimlə əlaqə"
+
+msgid "Overall"
+msgstr "Ümumi"
+
+msgid "Contact to us"
+msgstr "Bizimlə əlaqə"
+
+msgid "Azerbaijan, Baku"
+msgstr "Azərbaycan, Baki"
+
+msgid "+994 12 000 00 00"
+msgstr "+994 12 000 00 00"
+
+msgid "info[at]informatika.edu.az"
+msgstr "info[at]informatika.edu.az"
+
+msgid "Social links"
+msgstr "Sosial şəbəkə"
+
+msgid "Rules"
+msgstr "İnternet-portal Azərbaycan Respublikası Təhsil Nazirliyinin dəstəyi ilə “Bakı”  nəşriyyatı tərəfindən istedadlı gənclər arasında distans proqramlaşdırma olimpiadalarının metodik təşkili üçün hazırlanmışdır."
+
+msgid "Ministry of Education of Azerbaijan Republic, 2015"
+msgstr " Azərbaycan Respublikası Təhsil Nazirliyi, 2015"
